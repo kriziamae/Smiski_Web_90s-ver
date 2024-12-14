@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>"OFFICIAL" Retro Smiski Site</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-        <div class = "landing-page">
-<!--HEADER-->
-            <header class = "landing-page-header">
-                <div class = "header-wrap">
-                    <div class = "header-logo">
-                        <img src = "assets/header/logo.png">
-                        <!--SMALL NAVIGATION LINKS-->
-                        <div class = "small-nav">
-                            <a href="landing_page.html"><h4>Home</h4></a>
-                            <h4>Shopping Cart</h4>
-                            <h4>Sign Up</h4>
-                        </div>
-                    </div>
-            <!-- MAIN NAVIGATION LINKS -->
-                    <div class = "main-nav">
-                        <div class="nav-img">
-                            <img src="assets/header/news.png">
-                            <img src="assets/header/smiski.png">
-                            <img src="assets/header/products.png">
-                            <img src="assets/header/shop.png">
-                        </div>
-                        <div class = "header-navigation">
-                            <a href="news.html"><h2>NEWS</h2></a>
-                            <a href="smiski.html"><h2>SMISKI</h2></a>
-                            <a href="products.html"><h2 >PRODUCTS</h2></a>
-                            <a href="shop.html"><h2>SHOP</h2></a>
-                        </div>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width">
+    <title>"OFFICIAL" Retro Smiski Site</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="landing-page">
+        <!-- HEADER -->
+        <header class="landing-page-header">
+            <div class="header-wrap">
+                <div class="header-logo">
+                    <img src="assets/header/logo.png" alt="Logo">
+                    <div class="small-nav">
+                        <a href="landing_page.html"><h4>Home</h4></a>
+                        <a href="cart.html"><h4>Shopping Cart</h4></a>
+                        <h4>Sign Up</h4>
                     </div>
                 </div>
-            </header>
-        </div>
-<!--PRODUCT LISTING-->
-    <body>
-        <div class="content">
-            <div class="content-details">
-                <div class="content-img">
-                    <h2>aaaa</h2>
+                <div class="main-nav">
+                    <div class="nav-img">
+                        <img src="assets/header/news.png" alt="News">
+                        <img src="assets/header/smiski.png" alt="Smiski">
+                        <img src="assets/header/products.png" alt="Products">
+                        <img src="assets/header/shop.png" alt="Shop">
+                    </div>
+                    <div class="header-navigation">
+                        <a href="news.html"><h2>NEWS</h2></a>
+                        <a href="smiski.html"><h2>SMISKI</h2></a>
+                        <a href="products.html"><h2>PRODUCTS</h2></a>
+                        <a href="shop.html"><h2>SHOP</h2></a>
+                    </div>
                 </div>
             </div>
+        </header>
+    </div>
+
+    <!-- PRODUCT LISTING -->
+    <div class="content">
+        <div class="content-details">
+            <div id="products-container"></div>
         </div>
-        <script src="" async defer></script>
-    </body>
+    </div>
+
+    <!-- JS SCRIPT -->
+    <script type="module" src="index.js"></script>
+
+</body>
 </html>

@@ -65,7 +65,7 @@
     background-color: #FFEC28;
     text-align: center;
     max-height: 40px;
-    h2 {
+    a {
         flex: 1;
         margin: auto;
         font-weight: lighter;
@@ -91,6 +91,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 85%;
+    max-height: none;
 }
 .content-section1{
     display: flex;
@@ -104,6 +105,7 @@ body{
 .main-content h1{
     transform: rotate(-12deg);
 }
+
 #rectangle{
     display: flex;
     width: 80%;
@@ -112,3 +114,4 @@ body{
     margin-left: 10%;
     border-radius: 50px;
 }
+

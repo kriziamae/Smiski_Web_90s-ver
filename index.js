@@ -1,6 +1,6 @@
 import PROD_LIST from './products.js';
 
-const PROD_JSON = JSON.parse(PROD_LIST);  
+const PROD_JSON = JSON.parse(PROD_LIST);
 
 /* -------- RUN ONLY ON SPECIFIC PAGES CMD -------- */
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,7 +33,7 @@ function addProductsToPage(PROD_JSON) {
             </div>
             `;
         }
-        productContainer.innerHTML = prodHTML; 
+        productContainer.innerHTML = prodHTML;
     } else {
         console.log("No products available or failed to load product data.");
     }
@@ -57,7 +57,7 @@ function addWhatsHotToPage(PROD_JSON) {
             </div>
             `;
         }
-        whatsHotContainer.innerHTML = whatsHotHTML; 
+        whatsHotContainer.innerHTML = whatsHotHTML;
     } else {
         console.log("No products available or failed to load product data.");
     }
@@ -67,7 +67,7 @@ function addWhatsHotToPage(PROD_JSON) {
 function addToCart(event) {
     const productId = event.target.getAttribute('data-id');
     const product = PROD_JSON.find(item => item.id === productId);
-    
+
     if (product) {
         cartItems.push(product);
         alert(`${product.name} added to your cart!`);

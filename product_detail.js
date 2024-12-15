@@ -1,6 +1,6 @@
 import PROD_LIST from './products.js';
 
-const PROD_JSON = JSON.parse(PROD_LIST);  
+const PROD_JSON = JSON.parse(PROD_LIST);
 
 function deleteChildElements(parent) {
     while (parent.firstChild) {
@@ -9,7 +9,7 @@ function deleteChildElements(parent) {
 }
 
 /* PRODUCT DETAILS */
-function getUrlParameter(param){
+function getUrlParameter(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param)
 }
@@ -20,7 +20,7 @@ const productID = getUrlParameter('id');
 const product = PROD_JSON.find(p => p.id == parseInt(productID));
 
 
-if (product){
+if (product) {
     const productContainer = document.getElementById("product-detail-container");
     productContainer.innerHTML = `
         <div class="product-main-details">
@@ -39,11 +39,11 @@ if (product){
     `;
 
     const buyButton = document.getElementById("buy-button");
-    buyButton.addEventListener("click", function() {
-        addToCart(product.id); 
+    buyButton.addEventListener("click", function () {
+        addToCart(product.id);
     });
 
-} else { 
+} else {
     const productContainer = document.getElementById("product-detail-container");
     productContainer.innerHTML = '<h2>Product is not found.</h2>';
 }

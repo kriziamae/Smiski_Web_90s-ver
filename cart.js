@@ -27,7 +27,7 @@ function loadCart() {
                 </div>
                 <button class="remove-item-btn" data-id="${item.id}">Remove</button>
             `;
-            
+
             // Append the cart item to the cart container
             cartItemsContainer.appendChild(cartItemDiv);
         });
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cartItemsContainer.addEventListener("click", (event) => {
         if (event.target.classList.contains("remove-item-btn")) {
             const productId = parseInt(event.target.getAttribute("data-id"));
-            removeFromCart(productId); 
+            removeFromCart(productId);
         }
     });
 });

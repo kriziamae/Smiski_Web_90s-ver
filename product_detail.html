@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html data-page="product-detail">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>"OFFICIAL" Retro Smiski Site</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class = "landing-page">
-<!-- SNOWY GIF OVERLAY -->
-            <div id="gif-overlay" class="overlay">
-                <img src="./assets/snow02.gif" alt="Loading" class="gif">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>"OFFICIAL" Retro Smiski Site</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <!-- SNOWY GIF OVERLAY -->
+      <div id="gif-overlay" class="overlay">
+        <img src="./assets/snow02.gif" alt="Loading" class="gif" />
+      </div>
+      <!-- GIF Overlay on the right side -->
+      <div id="gif-overlay" class="overlay-right">
+        <img src="./assets/snow02.gif" alt="Loading" class="gif-right" />
+      </div>
+      <!--HEADER-->
+      <header class="landing-page-header">
+        <div class="header-wrap">
+          <div class="header-logo">
+            <img src="assets/header/logo.png" />
+          </div>
+          <!--SMALL NAVIGATION LINKS-->
+          <div class="small-nav">
+            <a href="landing_page.html"><h4>Home</h4></a>
+            <a href="cart.html"><h4>Shopping Cart</h4></a>
+            <a href="sign_up.html"><h4>Sign Up</h4></a>
+          </div>
+          <!-- MAIN NAVIGATION LINKS -->
+          <div class="main-nav-container">
+            <div class="nav-img">
+              <a href="/news.html" class="header-link-container">
+                <img
+                  src="assets/header/news.png"
+                  class="header-img"
+                  data-id="1"
+                />
+                <h2 class="header-link" data-id="1">NEWS</h2>
+              </a>
+              <a href="/smiski.html" class="header-link-container">
+                <img
+                  src="assets/header/smiski.png"
+                  class="header-img"
+                  data-id="2"
+                />
+                <h2 class="header-link" data-id="2">SMISKI</h2>
+              </a>
+              <a href="/products.html" class="header-link-container">
+                <img
+                  src="assets/header/products.png"
+                  class="header-img"
+                  data-id="3"
+                />
+                <h2 class="header-link" data-id="3">PRODUCTS</h2>
+              </a>
+              <a href="/shop.html" class="header-link-container">
+                <img
+                  src="assets/header/shop.png"
+                  class="header-img"
+                  data-id="4"
+                />
+                <h2 class="header-link" data-id="4">SHOP</h2>
+              </a>
             </div>
-<!-- GIF Overlay on the right side -->
-        <div id="gif-overlay" class="overlay-right">
-            <img src="./assets/snow02.gif" alt="Loading" class="gif-right">
+          </div>
         </div>
-<!--HEADER-->
-            <header class = "landing-page-header">
-                <div class = "header-wrap">
-                    <div class = "header-logo">
-                        <img src = "assets/header/logo.png">
-                    </div>
-                        <!--SMALL NAVIGATION LINKS-->
-                        <div class = "small-nav">
-                            <a href="landing_page.html"><h4>Home</h4></a>
-                            <a href="cart.html"><h4>Shopping Cart</h4></a>
-                            <a href="sign_up.html"><h4>Sign Up</h4></a>
-                        </div>
-<!-- MAIN NAVIGATION LINKS -->
-                        <div class="main-nav-container">
-                            <div class="nav-img">
-                                <a href="/news.html" class="header-link-container">
-                                    <img src="assets/header/news.png" class="header-img" data-id="1">
-                                    <h2 class="header-link" data-id="1">NEWS</h2>
-                                </a>
-                                <a href="/smiski.html" class="header-link-container">
-                                    <img src="assets/header/smiski.png" class="header-img" data-id="2">
-                                    <h2 class="header-link" data-id="2">SMISKI</h2>
-                                </a>
-                                <a href="/products.html" class="header-link-container">
-                                    <img src="assets/header/products.png" class="header-img" data-id="3">
-                                    <h2 class="header-link" data-id="3">PRODUCTS</h2>
-                                </a>
-                                <a href="/shop.html" class="header-link-container">
-                                    <img src="assets/header/shop.png" class="header-img" data-id="4">
-                                    <h2 class="header-link" data-id="4">SHOP</h2>
-                                </a>
-                            </div>
-                        </div>
-                </div>
-            </header>
-<!-- PRODUCT DETAILS -->
-<body class="product-content" style="background-color: #64FF00;">
-    <div class="content-details">
-        <!-- Product details container where dynamic content will be inserted -->
-        <div class="product-detail-container" id="product-detail-container"></div>
+      </header>
+      <!-- PRODUCT DETAILS -->
+      <body class="product-content" style="background-color: #64ff00">
+        <div class="content-details">
+          <!-- Product details container where dynamic content will be inserted -->
+          <div
+            class="product-detail-container"
+            id="product-detail-container"
+          ></div>
+        </div>
+      </body>
     </div>
-</body>
-</div>
 
-<!-- JS SCRIPT -->
-<script type="module" src="product_detail.js"></script>
-<script>
-    // JavaScript to show the overlay on page load
-    window.onload = () => {
-        const overlay = document.getElementById('gif-overlay');
-        overlay.classList.add('show');  // Show the overlay
-    };
-</script>
-</body>
-
+    <!-- JS SCRIPT -->
+    <script type="module" src="product_detail.js"></script>
+    <script>
+      // JavaScript to show the overlay on page load
+      window.onload = () => {
+        const overlay = document.getElementById("gif-overlay");
+        overlay.classList.add("show"); // Show the overlay
+      };
+    </script>
+  </body>
 </html>

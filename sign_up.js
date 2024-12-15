@@ -3,7 +3,7 @@ const signupForm = document.getElementById('signup-form');
 const message = document.getElementById('message');
 
 // Add an event listener to the form submit
-signupForm.addEventListener('submit', function(event) {
+signupForm.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting and refreshing the page
 
     const username = document.getElementById('username').value;
@@ -21,7 +21,7 @@ signupForm.addEventListener('submit', function(event) {
     if (username && email && password && confirmPassword) {
         message.textContent = "Sign up successful!";
         message.style.color = "green";
-        
+
     } else {
         message.textContent = "All fields are required!";
         message.style.color = "red";

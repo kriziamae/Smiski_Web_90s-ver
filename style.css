@@ -377,8 +377,55 @@ button:hover {
     background-color: #45a049;
 }
 
-/* MISC */
+/* Overlay Style */
+.overlay {
+    position: fixed;  /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 9999;  /* Ensure the overlay is above all other content */
+    visibility: hidden;  /* Hidden by default */
+    opacity: 0;  /* Fully transparent by default */
+    transition: visibility 0s, opacity 0.3s ease;  /* Smooth transition for visibility */
+    pointer-events: none;
+}
 
+.overlay.show {
+    visibility: visible;
+    opacity: 1;  /* Make visible */
+}
+
+/* Style for the GIF */
+.gif {
+    max-width: 100%;  /* Set a fixed small size for the GIF */
+    max-height: 100vh; /* Set a fixed small size for the GIF */
+    object-fit: contain;
+}
+
+.overlay-right {
+    position: fixed;
+    top: 0;
+    right: 0;  /* Place the overlay on the right side */
+    height: 100vh;  /* Full viewport height */
+    width: 50vw;  /* Optional: 50% width of the screen for the right side */
+    display: flex;
+    justify-content: center;  /* Center the GIF horizontally */
+    align-items: center;  /* Center the GIF vertically */
+    z-index: 9999;  /* Ensure it's above the content */
+    overflow: hidden;  /* Hide any overflowing GIF parts */
+    pointer-events: none;
+}
+
+/* GIF Styling */
+.gif-right {
+    width: auto;
+    height: 100%;  /* Ensure the GIF fits the height of the container */
+    animation: gifRepeat 2s infinite;  /* Animation for repeating effect */
+}
+
+/* MISC */
 .silkscreen-regular {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;

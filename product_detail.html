@@ -10,6 +10,14 @@
     </head>
     <body>
         <div class = "landing-page">
+<!-- SNOWY GIF OVERLAY -->
+            <div id="gif-overlay" class="overlay">
+                <img src="./assets/snow02.gif" alt="Loading" class="gif">
+            </div>
+<!-- GIF Overlay on the right side -->
+        <div id="gif-overlay" class="overlay-right">
+            <img src="./assets/snow02.gif" alt="Loading" class="gif-right">
+        </div>
 <!--HEADER-->
             <header class = "landing-page-header">
                 <div class = "header-wrap">
@@ -56,6 +64,13 @@
 
 <!-- JS SCRIPT -->
 <script type="module" src="product_detail.js"></script>
+<script>
+    // JavaScript to show the overlay on page load
+    window.onload = () => {
+        const overlay = document.getElementById('gif-overlay');
+        overlay.classList.add('show');  // Show the overlay
+    };
+</script>
 </body>
 
 </html>

@@ -17,9 +17,11 @@ function addProductsToPage(PROD_JSON) {
         for (let element of PROD_JSON) {
             prodHTML += `
             <div class="prod-card">
-                <img class="prod-img" src="${element.img}" alt="${element.name}">
-                <h1>${element.name}</h1>
-                <h2>$${element.price}</h2>
+                <a href="product_detail.html?id=${element.id}">
+                    <img class="prod-img" src="${element.img}" alt="${element.name}">
+                    <h1>${element.name}</h1>
+                    <h2>$${element.price}</h2>
+                </a>
             </div>
             `;
         }
@@ -30,10 +32,3 @@ function addProductsToPage(PROD_JSON) {
 }
 
 addProductsToPage(PROD_JSON);
-
-/* PRODUCT DETAILS */
-
-function getUrlParameter(PROD_JSON){
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(${element.name});
-}

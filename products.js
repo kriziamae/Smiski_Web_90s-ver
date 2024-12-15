@@ -1,8 +1,8 @@
 const smiskis = `[
     {
         "id": "1",
-        "name": "Hippers",
-        "description": "What is HIPPERS? HIPPERS are figures that can be attached to your favorite items and used as cute decorations! Their unique and personality-filled poses will catch the corner of your eye and make you smile. They can be attached to computer monitors, smartphones, and photo frames. Whether at work or on the go, you can be with your favorite SMISKI anytime, anywhere! ♪",
+        "name": "Smiski Hippers",
+        "description": "<b>What is HIPPERS?</b> <br><br>HIPPERS are figures that can be attached to your favorite items and used as cute decorations! Their unique and personality-filled poses will catch the corner of your eye and make you smile. They can be attached to computer monitors, smartphones, and photo frames. Whether at work or on the go, you can be with your favorite SMISKI anytime, anywhere! ♪",
         "img": "./assets/products/hippers.png",
         "price": "13"
     },

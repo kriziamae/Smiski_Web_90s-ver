@@ -8,37 +8,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
+    <body>
         <div class = "landing-page">
 <!--HEADER-->
             <header class = "landing-page-header">
                 <div class = "header-wrap">
                     <div class = "header-logo">
                         <img src = "assets/header/logo.png">
+                    </div>
                         <!--SMALL NAVIGATION LINKS-->
                         <div class = "small-nav">
                             <a href="landing_page.html"><h4>Home</h4></a>
                             <a href="cart.html"><h4>Shopping Cart</h4></a>
-                            <h4>Sign Up</h4>
+                            <a href="sign_up.html"><h4>Sign Up</h4></a>
                         </div>
-                    </div>
-            <!-- MAIN NAVIGATION LINKS -->
-                    <div class = "main-nav">
-                        <div class="nav-img">
-                            <img src="assets/header/news.png">
-                            <img src="assets/header/smiski.png">
-                            <img src="assets/header/products.png">
-                            <img src="assets/header/shop.png">
+<!-- MAIN NAVIGATION LINKS -->
+                        <div class="main-nav-container">
+                            <div class="nav-img">
+                                <a href="/news.html" class="header-link-container">
+                                    <img src="assets/header/news.png" class="header-img" data-id="1">
+                                    <h2 class="header-link" data-id="1">NEWS</h2>
+                                </a>
+                                <a href="/smiski.html" class="header-link-container">
+                                    <img src="assets/header/smiski.png" class="header-img" data-id="2">
+                                    <h2 class="header-link" data-id="2">SMISKI</h2>
+                                </a>
+                                <a href="/products.html" class="header-link-container">
+                                    <img src="assets/header/products.png" class="header-img" data-id="3">
+                                    <h2 class="header-link" data-id="3">PRODUCTS</h2>
+                                </a>
+                                <a href="/shop.html" class="header-link-container">
+                                    <img src="assets/header/shop.png" class="header-img" data-id="4">
+                                    <h2 class="header-link" data-id="4">SHOP</h2>
+                                </a>
+                            </div>
                         </div>
-                        <div class = "header-navigation">
-                            <a href="news.html"><h2>NEWS</h2></a>
-                            <a href="smiski.html"><h2>SMISKI</h2></a>
-                            <a href="products.html"><h2 >PRODUCTS</h2></a>
-                            <a href="shop.html"><h2>SHOP</h2></a>
-                        </div>
-                    </div>
                 </div>
             </header>
-        </div>
 <!--ABOUT PAGE-->
     <div class="about">
         <img src="./assets/smiski_about.png">

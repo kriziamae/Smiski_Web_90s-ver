@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-page="landing">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,43 +54,33 @@
                         <div class = "log-in">
                             <h1>Log In</h1>
                             <form action="">
-                                <label for="email">email:</label> <br>
+                                <label for="email">email:</label>
                                 <input type="text" id="email" name="email" required> <br>
-                                <label for="password">password:</label> <br>
+                                <label for="password">password:</label>
                                 <input type="password" id="password" name="password" required>
                                 <div class="wrap">
                                     <button type="submit">submit</button>
                                 </div>
                             </form>
-                            <hr> <!--horizontal line-->
+                            <hr>
+                            <script type="text/javascript" src="https://counter.websiteout.com/js/7/13/0/0"></script> 
+                            <!--horizontal line-->
                         </div>
                     </div>
 <!--MAIN CONTENT-->
                     <div class="main-content">
                         <div class="whats-hot">
-                            <h1>WHAT'S HOT</h1>
-                            <div id="rectangle"></div>
+                            <div class="hook">
+                                <h1>WHAT'S HOT</h1>
+                            </div>
+                            <div id="rectangle" class="rectangle-container">
+                                <div class="whats-hot-content-container" id="whats-hot-content-container"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="index.js" async defer></script>
-        <script>
-            const headerLinks = document.querySelectorAll('.header-link');
-            
-            headerLinks.forEach(item => {
-                const itemID = item.getAttribute('data-id');
-                const image = document.querySelector(`.header-img[data-id="${itemID}"]`);
-        
-                item.addEventListener('mouseenter', image => {
-                    item.style.color = '#FFC42D';
-                });
-        
-                item.addEventListener('mouseleave', image => {
-                    item.style.color = '#333';
-                });
-            });
-        </script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>

@@ -9,23 +9,20 @@ function deleteChildElements(parent) {
 }
 
 /* PRODUCT DETAILS */
-
-// Get query parameter from the URL.
 function getUrlParameter(param){
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param)
 }
 
-// Get product ID from the URL.
 const productID = getUrlParameter('id');
 
 // Find the product based on the ID.
 const product = PROD_JSON.find(p => p.id == parseInt(productID));
 
-// Display the product on the page.
+
 if (product){
     const productContainer = document.getElementById("product-detail-container");
-    productContainer.innerHTML += `
+    productContainer.innerHTML = `
         <div class="product-main-details">
             <img class="prod-detail-img" src="${product.img}" alt="${product.name}">
             <div class="product-info">
@@ -35,15 +32,36 @@ if (product){
                 </div>
                 <div class="prod-purchase-info">
                     <h2 class="prod-price">$${product.price}</h2>
-                    <button type="button" class="prod-btn">BUY</button>
+                    <button type="button" class="prod-btn" id="buy-button">BUY</button>
                 </div>
             </div> 
         </div>
     `;
-} 
-// If product is not found, shows error message.
-else{ 
+
+    const buyButton = document.getElementById("buy-button");
+    buyButton.addEventListener("click", function() {
+        addToCart(product.id); 
+    });
+
+} else { 
     const productContainer = document.getElementById("product-detail-container");
     productContainer.innerHTML = '<h2>Product is not found.</h2>';
 }
 
+// Add product to the shopping cart
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Cart checker (to see if item is in cart)
+    const productInCart = cart.find(item => item.id === productId);
+
+    if (productInCart) {
+        productInCart.quantity += 1;
+    } else {
+        const productToAdd = PROD_JSON.find(p => p.id === productId);
+        cart.push({ ...productToAdd, quantity: 1 });
+    }
+
+    // Update new cart in localstorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+}

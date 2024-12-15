@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-id="cart">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,51 +9,60 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class = "landing-page">
-<!--HEADER-->
-            <header class = "landing-page-header">
-                <div class = "header-wrap">
-                    <div class = "header-logo">
-                        <img src = "assets/header/logo.png">
+        <div class="landing-page">
+            <!-- HEADER -->
+            <header class="landing-page-header">
+                <div class="header-wrap">
+                    <div class="header-logo">
+                        <img src="assets/header/logo.png">
                     </div>
-                        <!--SMALL NAVIGATION LINKS-->
-                        <div class = "small-nav">
-                            <a href="landing_page.html"><h4>Home</h4></a>
-                            <a href="cart.html"><h4>Shopping Cart</h4></a>
-                            <a href="sign_up.html"><h4>Sign Up</h4></a>
+                    <div class="small-nav">
+                        <a href="landing_page.html"><h4>Home</h4></a>
+                        <a href="cart.html"><h4>Shopping Cart</h4></a>
+                        <a href="sign_up.html"><h4>Sign Up</h4></a>
+                    </div>
+                    <div class="main-nav-container">
+                        <div class="nav-img">
+                            <a href="/news.html" class="header-link-container">
+                                <img src="assets/header/news.png" class="header-img" data-id="1">
+                                <h2 class="header-link" data-id="1">NEWS</h2>
+                            </a>
+                            <a href="/smiski.html" class="header-link-container">
+                                <img src="assets/header/smiski.png" class="header-img" data-id="2">
+                                <h2 class="header-link" data-id="2">SMISKI</h2>
+                            </a>
+                            <a href="/products.html" class="header-link-container">
+                                <img src="assets/header/products.png" class="header-img" data-id="3">
+                                <h2 class="header-link" data-id="3">PRODUCTS</h2>
+                            </a>
+                            <a href="/shop.html" class="header-link-container">
+                                <img src="assets/header/shop.png" class="header-img" data-id="4">
+                                <h2 class="header-link" data-id="4">SHOP</h2>
+                            </a>
                         </div>
-<!-- MAIN NAVIGATION LINKS -->
-                        <div class="main-nav-container">
-                            <div class="nav-img">
-                                <a href="/news.html" class="header-link-container">
-                                    <img src="assets/header/news.png" class="header-img" data-id="1">
-                                    <h2 class="header-link" data-id="1">NEWS</h2>
-                                </a>
-                                <a href="/smiski.html" class="header-link-container">
-                                    <img src="assets/header/smiski.png" class="header-img" data-id="2">
-                                    <h2 class="header-link" data-id="2">SMISKI</h2>
-                                </a>
-                                <a href="/products.html" class="header-link-container">
-                                    <img src="assets/header/products.png" class="header-img" data-id="3">
-                                    <h2 class="header-link" data-id="3">PRODUCTS</h2>
-                                </a>
-                                <a href="/shop.html" class="header-link-container">
-                                    <img src="assets/header/shop.png" class="header-img" data-id="4">
-                                    <h2 class="header-link" data-id="4">SHOP</h2>
-                                </a>
-                            </div>
-                        </div>
+                    </div>
                 </div>
             </header>
-<!--PRODUCT LISTING-->
-    <body>
-        <div class="content">
-            <div class="content-details">
-                <div class="content-img">
-                    <h2>aaaa</h2>
+
+            <!-- MAIN CONTENT -->
+            <body class="content">
+                <div class="content-details">
+                    <div class="cart-container">
+                        <h1>Your Shopping Cart</h1>
+                        <div id="cart-items">
+                            <!-- Cart items will appear here -->
+                        </div>
+                        <div id="cart-summary">
+                            <h2>Cart Summary</h2>
+                            <p>Total Items: <span id="total-items">0</span></p>
+                            <p>Total Price: $<span id="total-price">0.00</span></p>
+                            <button id="checkout-btn">Proceed to Checkout</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </body>
         </div>
-        <script src="" async defer></script>
+
+        <script src="cart.js" async defer></script>
     </body>
 </html>

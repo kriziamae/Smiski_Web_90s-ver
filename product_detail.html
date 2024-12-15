@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-page="product-detail">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,8 +46,16 @@
                 </div>
             </header>
 <!-- PRODUCT DETAILS -->
-    <body class="product-content" style="background-color: #64FF00;">
-        <div id="product-detail-container" class="product-detail-container"></div>
-        <script type="module" src="product_detail.js" async defer></script>
-    </body>
+<body class="product-content" style="background-color: #64FF00;">
+    <div class="content-details">
+        <!-- Product details container where dynamic content will be inserted -->
+        <div class="product-detail-container" id="product-detail-container"></div>
+    </div>
+</body>
+</div>
+
+<!-- JS SCRIPT -->
+<script type="module" src="product_detail.js"></script>
+</body>
+
 </html>

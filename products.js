@@ -130,13 +130,4 @@ const smiskis = `[
     }
 ]`;
 
-const template = `
-    {
-    "id": "",
-    "name": "",
-    "description:" "",
-    "img": ""
-    "price": "0",
-    },`
-
 export default smiskis;
